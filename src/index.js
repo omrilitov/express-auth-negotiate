@@ -1,6 +1,8 @@
 'use strict';
 
-export default function negotiateMiddleware (req, res, next) {
+import createError from 'http-errors';
+
+export default function (req, res, next) {
   const auth = req.get('authorization');
 
   if (!auth) {
@@ -8,9 +10,7 @@ export default function negotiateMiddleware (req, res, next) {
   }
 
   if (auth.lastIndexOf('Negotiate') !== 0) {
-    res.status(400);
-
-    return `Malformed authentication token ${auth}`;
+    return next(createError(400, `Malformed authentication token ${auth}`));
   }
 
   req.auth = req.auth || {};
