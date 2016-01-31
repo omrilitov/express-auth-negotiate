@@ -1,6 +1,6 @@
 {
   "name": "express-auth-negotiate",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Express middleware to handle negotiate authentication",
   "main": "lib/index.js",
   "scripts": {
