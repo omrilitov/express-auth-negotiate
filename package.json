@@ -1,0 +1,55 @@
+{
+  "name": "express-auth-negotiate",
+  "version": "0.0.0",
+  "description": "Express middleware to handle negotiate authentication",
+  "main": "lib/index.js",
+  "scripts": {
+    "prepublish": "gulp build",
+    "test": "gulp test",
+    "coveralls": "gulp coveralls"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "gulp eslint"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/omrilitov/express-auth-negotiate"
+  },
+  "keywords": [
+    "express",
+    "auth",
+    "windows",
+    "negotiate"
+  ],
+  "author": {
+    "name": "Omri Litov",
+    "email": "omrilitov@gmail.com",
+    "url": "https://github.com/omrilitov"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/omrilitov/express-auth-negotiate/issues"
+  },
+  "homepage": "https://github.com/omrilitov/express-auth-negotiate",
+  "devDependencies": {
+    "babel-core": "^6.3.26",
+    "babel-eslint": "^4.1.6",
+    "babel-preset-es2015": "^6.3.13",
+    "del": "^2.2.0",
+    "eslint-config-noamokman": "^1.0.1",
+    "ghooks": "^1.0.3",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^6.1.1",
+    "gulp-babel-istanbul": "^0.11.0",
+    "gulp-coveralls": "^0.1.4",
+    "gulp-eslint": "^1.1.1",
+    "gulp-if": "^2.0.0",
+    "gulp-mocha": "^2.2.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "merge-stream": "^1.0.0",
+    "run-sequence": "^1.1.5"
+  },
+  "dependencies": {}
+}
